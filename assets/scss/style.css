@@ -1,0 +1,45 @@
+.section {
+  max-width: 55rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  margin-top: 5rem;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+#date {
+  width: 8rem;
+  height: 1.5rem;
+}
+
+#button {
+  width: 8rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+  background-color: aquamarine;
+  border: 0;
+  border-radius: 0.2rem;
+}
+
+#button:hover {
+  background-color: blueviolet;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+#button:active {
+  background-color: #000000;
+  color: #f837d5;
+  transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+#result {
+  margin-top: 3rem;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
