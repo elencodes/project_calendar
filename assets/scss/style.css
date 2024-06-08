@@ -41,5 +41,11 @@
   margin-top: 3rem;
   font-size: 1.125rem;
   text-transform: uppercase;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.125rem;
+}
+
+#error {
+  color: #f8375a;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
