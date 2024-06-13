@@ -18,14 +18,12 @@ const messageForUser = () => {
 	//6.Присваиваем переменной lastNumber значение остатка от деления daysLeft(кол-ва дней) на 10 - получаем последнюю цифру числа
 	const lastNumber = daysLeft % 10;
 	//7.Вводим условие для верного склонения слова дня/дней в зависимости от количество дней
-	if (daysLeft > 10 && [11, 12, 13, 14].includes(daysLeft % 100)) {
+	if (daysLeft > 10 && [11, 12, 13, 14].includes(daysLeft % 100) || [5, 6, 7, 8, 9, 0].includes(lastNumber)) {
 		resultMessage.textContent = `До вашего Дня Рождения осталось ${daysLeft} дней`
 	} else if (lastNumber == 1 || daysLeft == 1) {
 		resultMessage.textContent = `До вашего Дня Рождения остался ${daysLeft} день`;
 	} else if ([2, 3, 4].includes(lastNumber)) {
 		resultMessage.textContent = `До вашего Дня Рождения осталось ${daysLeft} дня`;
-	} else if ([5, 6, 7, 8, 9, 0].includes(lastNumber)) {
-		resultMessage.textContent = `До вашего Дня Рождения осталось ${daysLeft} дней`;
 	} else if (birthDateValue < currentDate) {
 		resultMessage.textContent = `Ваш День Рождения уже прошел`;
 	}
